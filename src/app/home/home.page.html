@@ -1,0 +1,43 @@
+<ion-content>
+  <h1><u>Vai da namoro</u></h1>
+  <h3>Será que ele/a é sua alma gemea?</h3>
+
+  <div class="imagem">
+    <img src="../../assets/usuario.png">
+  </div>
+
+  <ion-item class="ion-no-padding">
+    <ion-label position="floating">Nome da 1° pessoa</ion-label>
+    <ion-input type="text" [{ngModel}]></ion-input>
+  </ion-item>
+  <div class="icone">
+    <ion-icon name="add"></ion-icon>
+  </div>
+
+  <div class="imagem">
+    <img src="../../assets/usuario.png">
+  </div>
+
+  <ion-item class="ion-no-padding">
+    <ion-label position="floating">Nome da 2° pessoa</ion-label>
+    <ion-input type="text" [{ngModel}]></ion-input>
+  </ion-item>
+  <ion-button (click)="calcular()" expand="block" color="danger" id="abrir-resposta">Calcular</ion-button>
+
+  <div class="baloes">
+    <img src="../../assets/love.png">
+  </div>
+
+  <div class="coracao">
+    <img src="../../assets/coracao.gif">
+  </div>
+  
+  
+  <ion-modal id="resposta" #modal trigger="abrir-resposta">
+    <ng-template>
+      <div class="wrapper">
+      <h1>{{porcentagem}}%</h1>
+    </div>
+    </ng-template>
+  </ion-modal>
+</ion-content>

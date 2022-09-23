@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+ion-content {
+  --padding-start: 32px; 
+  --padding-top: 32px; 
+  --padding-end: 32px;
+  --background: url("../../assets/fundo.gif");
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  ion-icon {
+    font-size: 48px;
+  }
+}
+
+ion-item {
+  text-align: left;
+  font-weight: 700;
+}
+
+.ion-no-padding {
+  --border-radius: 12px;
+}
+
+ion-label {
+  height: 15px;
+}
+
+.imagem{
+  text-align: center;
+}
+
+.coracao {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.baloes {
+  text-align: center;
+  position: fixed;
+}
+
+ion-button {
+  width: calc(100% - 64px);
+  position: absolute;
+  bottom: 32px;
+  font-size: 18px;
+  --border-radius: 50ch;
+}
+
+
+#resposta{
+  --width: fit-content;
+  --min-width: 50%;
+  --height: fit-content;
+  --border-radius: 15px;
+  --box-shadow: 0 28px 48px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.wrapper{
+  margin-bottom: 10px; 
+}
